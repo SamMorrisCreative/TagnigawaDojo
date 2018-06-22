@@ -1,0 +1,486 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-size: 10px;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-family: "open sans", cursive;
+    font-weight: 300;
+    margin: 0px;
+    padding: 0px;
+    line-height: 1.5em;
+}
+
+/*Typography
+-----------------------------------------------------------------------------------------*/
+
+a {
+    color: white;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Exo";
+}
+
+h3 {
+    font-weight: 100;
+    font-size: 3.5em;
+    margin-bottom: 25px;
+}
+
+h4 {
+    font-weight: 300;
+    font-size: 1.4em;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.timetable {
+    font-size: 1.4em;
+}
+
+.quote {
+    font-style: italic;
+    font-size: 1.4em;
+    color: rgba(219,0,0,1);
+}
+
+/*Universal Rules
+-----------------------------------------------------------------------------------------*/
+.wrapper {
+    background-color: black;
+}
+
+.container {
+    font-size: 1.8em;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    padding-top: 5vh;
+}
+
+.gutter {
+    margin: 0 1%;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clearfix {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+section {
+    padding-top: 100px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+
+/*Header
+---------------------------------------------------------------------------------------------*/
+
+#header {
+    height: 20vh;
+    text-align: center;
+    padding-top: 2vh;
+    background-color: white;
+}
+
+.nav-logo {
+    height: calc(100% - 30px);
+    margin: 0 auto;
+    padding-bottom: 2vh;
+}
+
+.logo {
+    height: 100%;
+    width: auto;
+}
+
+.navbar {
+    display: block;
+    margin: px auto;
+    background-color: #2a2a2a;
+    border: 3px dashed red;
+}
+
+.nav-ul{
+    list-style: none;
+    text-align: center;
+}
+
+.nav-ul li{
+    display: inline-block;
+}
+
+.nav-ul li a {
+    font-size: 1.8em;
+    color: white;
+    text-align: center;
+    margin: 0 25px;
+/*    padding: 15px 16px;*/
+    text-decoration: none;
+}
+
+.nav-ul li a:hover {
+    background-color: rgb(219, 0, 0);
+}
+
+
+/*Quickbar
+---------------------------------------------------------------------------------------------*/
+.quickbar {
+    display: inherit ;
+    height: 30px;
+    width: 100%;
+    background-color: rgba(219,0,0,1);
+}
+
+.quickbar-container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.quickbar-link {
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    display: inline-block;
+    margin: 0 15px;
+}
+
+/* Hero-landing
+---------------------------------------------------------------------------------------------*/
+
+#hero-landing {
+    background: url("../images/hero-landing.jpg") 50% no-repeat;
+    background-size: cover;
+    height: 80vh;
+    text-align: center;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+
+.hero-banner {
+    height: auto;
+    width: 100%;
+    padding: 2%;
+    margin-top: 15vh;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.hero-title {
+    font-weight: 100;
+    font-size: 16em;
+    letter-spacing: 0.05em;
+    color: white;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.hero-sub {
+    font-weight: 300;
+    font-size: 5em;
+    color: white;
+    text-shadow: 1px 1px 2px #0a0a0a;
+}
+
+.hero-scroll {
+    text-align: center;
+    position: absolute;
+    bottom: 2vh;
+}
+
+.hero-scroll p {
+    color: rgb(219,0,0);
+    font-family: "Exo", cursive;
+    font-size: 2em;
+    padding-bottom: 1vh;
+}
+
+.hero-scroll img {
+    width: 40px;
+}
+
+
+
+
+/* Columns
+---------------------------------------------------------------------------------------------*/
+
+.col-half {
+    width: calc((6/12*100%) - 2%);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.col-6 {
+    width: calc((6/12*100%) - 2%);
+    display: inline-block;
+}
+
+.middle {
+    vertical-align: middle;
+}
+
+.top {
+    vertical-align: top;
+}
+
+.crop {
+    width: 100%;
+    overflow: hidden;
+}
+
+.content-img-small {
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.content-img-full {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.content-container {
+    font-size: 16px;
+}
+
+.contact-container {
+    font-size: 16px;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto -3px auto;
+    padding-top: 1vh;
+    background-color: rgba(219, 0, 0, 1);
+}
+
+.contact-item {
+    display: inline-block;
+    width: 100%;
+    padding: 0 1%;
+}
+
+.contact-item ul, .contact-item p {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.google-map {
+    width: 100%;
+    height: 35vh;
+    margin-top: 2vh;
+    padding: 1%;
+    border: 0;
+}
+
+.directions {
+    width: 100%;
+    height: auto;
+    padding: 1%;
+    margin-bottom: 15px;
+    border: 0;
+}
+
+#footer {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(42, 42, 42);
+}
+
+
+/* 1480px or less
+---------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 1480px) and (min-width: 970px) {
+    
+    .hero-title {
+        font-size: 10em;
+    }
+    
+    .hero-sub {
+        font-size: 3em;
+    }
+    
+}
+
+
+/* 970px or less
+---------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 970px) and (min-width: 600px) {
+    
+    #header {
+        height: 20vh;
+    }
+    
+    .nav-logo {
+        height: calc(100% - 45px);
+        width: auto;        
+    }
+    
+    .logo {
+        height: 100%;
+        width: auto;
+    }
+    
+    .quickbar {
+        height: 45px;
+    }
+    
+    
+    #hero-landing {
+        height: 80vh;
+    }
+    
+    
+    
+    .container {
+        width: 98%;
+    }
+    
+    .nav-ul li a {
+        font-size: 1.4em;
+    }
+    
+    .hero-title {
+        font-size: 6em;
+    }
+    
+    .hero-sub {
+        font-size: 2em;
+    }
+    
+    h3 {
+     font-size: 3em;
+    }
+    
+    .col-6,
+    .col-12 {
+        margin-top: 1.5vh;
+        width: 98%;
+    }
+    
+    .contact-item {
+        width: calc((1/2*100%) - 4%);
+        display: inline-block;
+}
+    
+}
+
+
+/* 600px or less
+---------------------------------------------------------------------------------------------*/
+@media only screen and (max-width: 599px) {
+        
+    #header {
+        height: 20vh;
+    }
+    
+    .nav-logo {
+        height: calc(100% - 45px);
+        width: auto;        
+    }
+    
+    .logo {
+        height: 100%;
+        width: auto;
+    }
+    
+    .quickbar {
+        height: 45px;
+    }    
+    
+    .quickbar-link {
+        font-size: 1.2em;
+    }
+    
+    .nav-ul li a {
+        font-size: 1em;
+    }
+    
+    .container {
+        width: 98%;
+    }
+    
+    .hero-title {
+        font-size: 5em;
+    }
+    
+    .hero-sub {
+        font-size: 1.6em;
+    }
+    
+    h3 {
+        margin-top: 0;
+        font-size: 4em;
+        font-weight: 200;
+    }
+    
+    h4 {
+        font-weight: 400;
+    }
+    
+    section {
+        padding-top: 0px;
+    }
+    
+    .col-half,
+    .col-6,
+    .col-12 {
+        text-align: center;
+        margin-top: 3vh;
+        width: 98%;
+    }
+    
+    .contact-item {
+        width: 98%;
+        border: none;
+    }
+    
+    .contact-item ul {
+        list-style: none;
+        margin-left: 0px;
+    }
+    
+}
+
+
+
+
+
+/*HIDE -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+.hide {
+    display: none;
+}
